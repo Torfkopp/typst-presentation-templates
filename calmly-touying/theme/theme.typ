@@ -4,7 +4,7 @@
 // Moloch-style headers, title page variants, standout slides
 
 #import "@preview/touying:0.6.1": *
-#import "colors.typ": *
+#import "colours.typ": *
 #import "typography.typ": *
 #import "components.typ": *
 #import "slides.typ": *
@@ -90,14 +90,15 @@
 // SYNTAX THEME MAPPING
 // =============================================================================
 
-#let _get-syntax-theme(colortheme, variant) = {
+#let _get-syntax-theme(colourtheme, variant) = {
   let themes = (
+    "catppuccin": (light: "syntax-themes/catppuccin-latte.tmTheme", dark: "syntax-themes/catppuccin-mocha.tmTheme"),
     "tomorrow": (light: "syntax-themes/Tomorrow.tmTheme", dark: "syntax-themes/Tomorrow-Night.tmTheme"),
     "warm-amber": (light: "syntax-themes/GitHub-Light.tmTheme", dark: "syntax-themes/Tomorrow-Night-Eighties.tmTheme"),
     "paper": (light: "syntax-themes/GitHub-Light.tmTheme", dark: "syntax-themes/GitHub-Dark.tmTheme"),
     "dracula": (light: "syntax-themes/Tomorrow.tmTheme", dark: "syntax-themes/Dracula.tmTheme"),
   )
-  let t = themes.at(colortheme, default: themes.at("tomorrow"))
+  let t = themes.at(colourtheme, default: themes.at("catppuccin"))
   t.at(variant, default: t.at("light"))
 }
 

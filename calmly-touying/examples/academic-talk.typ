@@ -13,7 +13,7 @@
 
     Joint work with: John Doe, Alice Johnson],
   ),
-  variant: "light",
+  variant: "dark",
   colortheme: "catppuccin",
   progressbar: "foot",
   header-style: "moloch",

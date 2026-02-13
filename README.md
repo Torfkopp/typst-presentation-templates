@@ -1,5 +1,3 @@
-# buffed-diatypst
+# Typst Presentation templates
 
-I missed some features in diatypst, so I put them in.
-
-Original Diatypst: https://github.com/skriptum/diatypst/tree/main
+Some presentation templates I adapted to have another colour scheme and/or to add features. 

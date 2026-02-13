@@ -1,6 +1,6 @@
 // Reusable Components - Theme-Aware
 // All components accept optional `colors` parameter for theming
-#import "colors.typ": *
+#import "colours.typ": *
 #import "typography.typ": *
 
 // =============================================================================
